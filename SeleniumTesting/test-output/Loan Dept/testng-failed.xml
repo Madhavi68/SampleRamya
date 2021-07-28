@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Loan Dept]">
+  <test thread-count="5" name="Personal Loan(failed)">
+    <classes>
+      <class name="testng.TestNG_2">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="demo"/>
+        </methods>
+      </class> <!-- testng.TestNG_2 -->
+    </classes>
+  </test> <!-- Personal Loan(failed) -->
+  <test thread-count="5" name="Car Loan(failed)">
+    <classes>
+      <class name="testng.TestNG_3">
+        <methods>
+          <include name="AoginAPICarLoan"/>
+        </methods>
+      </class> <!-- testng.TestNG_3 -->
+    </classes>
+  </test> <!-- Car Loan(failed) -->
+  <test thread-count="5" name="Home Loan(failed)">
+    <classes>
+      <class name="testng.TestNG_4">
+        <methods>
+          <include name="afterclass"/>
+          <include name="MobileLoginHomeLoan"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- testng.TestNG_4 -->
+    </classes>
+  </test> <!-- Home Loan(failed) -->
+</suite> <!-- Failed suite [Loan Dept] -->
